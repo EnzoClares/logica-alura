@@ -7,11 +7,18 @@
 	function pulalinha(){
 		document.write('<br><br><br>')
 	};
+
+	function mostra(conteudo){
+		document.write(conteudo);
+		pulalinha()
+	}
 	
-	document.write('flavio tem ' + (ano-1963) + ' anos');
-	pulalinha();
-	document.write('joão tem ' + (ano-1973) + ' anos');
-	pulalinha();
-	document.write('rodrigo tem ' + (ano-1983) + ' anos');	
+	mostra('flavio tem ' + (ano-1963) + ' anos');
+	
+	mostra('joão tem ' + (ano-1973) + ' anos');
+	
+	mostra('rodrigo tem ' + (ano-1983) + ' anos');
+	
+	mostra('mais um teste')	
 
 </script>
