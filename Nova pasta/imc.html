@@ -1,0 +1,27 @@
+<meta charset="utf-8"> 
+
+<script>
+
+function pulalinha(){
+	document.write('<br>')
+}
+
+function mostrar(frase){
+	pulalinha()
+	document.write(frase)
+}
+
+function calculaImc(peso, altura, ){
+
+	return peso / (altura*altura);
+	
+}
+
+var imcEnzo = calculaImc(81, 1.86)
+var imcFlavio = calculaImc(71, 1.75)
+
+mostrar(imcEnzo)
+mostrar(imcFlavio)
+
+
+</script>
