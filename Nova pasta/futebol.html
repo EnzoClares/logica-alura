@@ -1,0 +1,30 @@
+<meta charset="utf-8"> 
+
+<script>
+
+function pulalinha(){
+	document.write('<br>')
+}
+
+function mostrar(frase){
+	pulalinha()
+	document.write(frase)
+}
+
+var vitorias = parseInt(prompt('entre com o número de vitórias.'))//prompt sempre retorna uma string
+var empates = parseInt(prompt('entre com o número de empates.'))
+
+var pontos = vitorias*3 + empates
+
+if(pontos < 30){
+
+	mostrar('O time fez ' + pontos + ' pontos no campeonato.')
+	mostrar('seu time está pior que o ano passado')
+} else if(pontos == 30){
+	mostrar('O time fez ' + pontos + ' pontos no campeonato.')
+	mostrar('seu time está igual ao ano passado')
+} else{
+	mostrar('O time fez ' + pontos + ' pontos no campeonato.')
+	mostrar('seu time está melhor que o ano passado')
+}
+</script>
