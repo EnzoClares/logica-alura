@@ -1,0 +1,28 @@
+<meta charset="utf-8"> 
+
+<script>
+
+function pulalinha(){
+	document.write('<br>')
+}
+
+function mostrar(frase){
+	pulalinha()
+	document.write(frase)
+}
+
+var numeroCerto = Math.round(Math.random()*10);
+
+var numeroAdivinhado = parseInt(prompt('Chute um número: '))
+
+if(numeroAdivinhado == numeroCerto){
+	alert('acertou')
+} else{
+	alert('errou')
+}
+
+mostrar('o numero sorteado é: ' + numeroCerto)
+
+
+
+</script>
