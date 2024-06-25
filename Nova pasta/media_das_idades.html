@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<script>
+
+function pulalinha(){
+	document.write('<br>')
+}
+
+function mostrar(frase){
+	pulalinha()
+	document.write(frase)
+}
+
+var pessoas = parseInt(prompt('Quantas pessoas são ? '))
+
+var totaldeidades = 0 // inicialização tem que ser fora do for
+
+for(var numero = 1; numero<=pessoas; numero++){
+	
+	var idade = parseInt(prompt('qual sua idade? '))
+	totaldeidades = totaldeidades + idade
+}
+
+var media = totaldeidades/pessoas
+
+mostrar('a média de idades é igual a: ' + media)
+
+
+</script>
