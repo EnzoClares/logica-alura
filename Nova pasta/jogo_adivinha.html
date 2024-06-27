@@ -13,18 +13,25 @@ function mostrar(frase){
 
 
 
-var numeroCerto = Math.round(Math.random()*2);
+var numeroCerto = 1
 console.log(numeroCerto)
 
-var numeroAdivinhado = parseInt(prompt('Chute um número: '))
+for(var contador = 1; contador <= 3; contador++){
+	var numeroAdivinhado = parseInt(prompt('Chute um número: '))
 
-if(numeroAdivinhado == numeroCerto){
-	alert('acertou')
-} else{
-	alert('errou')
+	if(numeroAdivinhado == numeroCerto){
+		mostrar('Você acertou !!! ')
+		break
+	} 	else{
+		mostrar('Você errou !!!')
+	}
 }
 
-mostrar('o numero sorteado é: ' + numeroCerto)
+	mostrar('o número sorteado foi: ' + numeroCerto)
+
+
+
+
 
 
 
