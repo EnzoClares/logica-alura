@@ -4,7 +4,7 @@
 <button>Comparar</button>
 
 <script>
-	var segredo = 5
+	var segredo = 4
 
 	var input = document.querySelector('input');
 
@@ -14,7 +14,11 @@
 		} else{
 			alert('você errou !!!')
 		}
+		input.value = '';
+		input.focus()
 	}
+
+	
 
 	var botao = document.querySelector('button')
 
