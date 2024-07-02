@@ -4,7 +4,50 @@
 <button>Comparar</button>
 
 <script>
-	var segredos = [4, 2 , 3, 1];
+	function sorteia(){
+
+		return Math.round(Math.random() * 10)
+	}
+
+	function sorteiaNumero(n){
+
+		var segredos = []
+
+		var i = 0
+
+		while(i < n){
+
+			var numeroSorteado = sorteia()
+
+			if(numeroSorteado !== 0){
+
+			var achei = false
+
+				for(var contador = 0; contador < segredos.length; contador ++){
+
+					if(segredos[contador] == numeroSorteado){
+						achei = true
+						break
+					}
+				}
+
+				if(achei == false){
+				segredos.push(numeroSorteado)
+				i++
+				}
+			}	
+		}
+
+			
+
+		return segredos;
+	}
+
+	var segredos = sorteiaNumero(9);
+
+	console.log(segredos)
+
+	//segredos.push(5) --> forma de adicionar elementos a array
 
 	var input = document.querySelector('input');
 	input.focus()
@@ -25,7 +68,7 @@
 		if(achou == false){
 		alert('você errou !!')
 		}
-		
+
 		input.value = '';
 		input.focus()
 	}
